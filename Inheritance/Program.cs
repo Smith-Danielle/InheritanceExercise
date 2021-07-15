@@ -88,11 +88,13 @@ namespace Inheritance
                 Console.WriteLine("Or if you would like to see our reptiles, please type in reptiles.");
 
                 string animalType = Console.ReadLine();
+                Console.Clear();
                 if (animalType == "birds")
                 {
                     Console.WriteLine("Great! We have robins and penguins.");
                     Console.WriteLine("Please enter robins or penguins to get more information on the species.");
                     string speciesBirds = Console.ReadLine();
+                    Console.Clear();
                     if (speciesBirds == "robins")
                     {
                         Console.WriteLine("-------------------------------------------");
@@ -129,6 +131,7 @@ namespace Inheritance
                     Console.WriteLine("Great! We have chameleons and alligators.");
                     Console.WriteLine("Please enter chameleons or alligators to get more information on the species.");
                     string speciesReptiles = Console.ReadLine();
+                    Console.Clear();
                     if (speciesReptiles == "chameleons")
                     {
                         Console.WriteLine("-------------------------------------------");
@@ -166,6 +169,7 @@ namespace Inheritance
                 Console.WriteLine("If you would like to see other animals in our zoo, please type more.");
                 Console.WriteLine("Or type exit to close.");
                 nextStep = Console.ReadLine();
+                Console.Clear();
 
             } while (nextStep == "more");
             if (nextStep == "exit")
